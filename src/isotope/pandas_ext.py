@@ -201,5 +201,5 @@ class TrackedFrame:
         return self.df.copy()
 
     def __repr__(self) -> str:  # pragma: no cover - cosmetic
-        cols = {c: sorted(l.name for l in v) for c, v in self.labels.items()}
+        cols = {c: sorted(lb.name for lb in v) for c, v in self.labels.items()}
         return f"TrackedFrame(columns={cols}, node={self.node.id})"

@@ -17,7 +17,7 @@ def to_dict(root: Node) -> Dict[str, Any]:
             {
                 "id": n.id,
                 "op": n.op,
-                "labels": sorted(l.name for l in n.labels),
+                "labels": sorted(lb.name for lb in n.labels),
                 "parents": [p.id for p in n.parents],
                 "meta": [list(kv) for kv in n.meta],
             }

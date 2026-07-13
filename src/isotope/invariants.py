@@ -51,7 +51,7 @@ def check_conservation(root: Node) -> None:
                 raise LineageError(f"declassify node {n.id} label set inconsistent")
         else:
             if not n.labels >= parent_union:
-                dropped = sorted(l.name for l in parent_union - n.labels)
+                dropped = sorted(lb.name for lb in parent_union - n.labels)
                 raise LineageError(
                     f"node {n.id} ({n.op!r}) silently dropped labels: {dropped}"
                 )

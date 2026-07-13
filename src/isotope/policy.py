@@ -11,7 +11,7 @@ class PolicyViolation(Exception):
     def __init__(self, sink: str, labels: FrozenSet[Label]) -> None:
         self.sink = sink
         self.labels = labels
-        names = ", ".join(sorted(l.name for l in labels))
+        names = ", ".join(sorted(lb.name for lb in labels))
         super().__init__(f"sink {sink!r} rejects labels: {names}")
 
 

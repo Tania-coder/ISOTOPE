@@ -23,7 +23,7 @@ class Tracked:
         return self.node.labels
 
     def __repr__(self) -> str:  # pragma: no cover - cosmetic
-        names = ",".join(sorted(l.name for l in self.labels))
+        names = ",".join(sorted(lb.name for lb in self.labels))
         return f"Tracked({self.value!r}, labels={{{names}}}, node={self.node.id})"
 
     # -- constructors -------------------------------------------------
