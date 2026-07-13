@@ -7,6 +7,7 @@ verify: lint test invariants
 
 lint:
 	$(PY) -m compileall -q src tests scripts
+	$(PY) -m ruff check src tests scripts
 
 test:
 	$(PY) -m pytest

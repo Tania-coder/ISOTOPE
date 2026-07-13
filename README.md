@@ -1,5 +1,7 @@
 # ISOTOPE
 
+[![verify](https://github.com/Tania-coder/ISOTOPE/actions/workflows/verify.yml/badge.svg)](https://github.com/Tania-coder/ISOTOPE/actions/workflows/verify.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Tania-coder/ISOTOPE/blob/main/LICENSE) [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://github.com/Tania-coder/ISOTOPE)
+
 Data lineage and taint-tracking for Python pipelines, built around five
 verifiable integrity invariants.
 
