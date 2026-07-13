@@ -17,6 +17,6 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install test dependencies
-        run: pip install pytest pandas
+        run: pip install pytest pandas polars
       - name: Run full verification (lint + tests + invariants)
         run: make verify
