@@ -19,6 +19,7 @@ classifiers = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
+pandas = ["pandas>=1.5"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
