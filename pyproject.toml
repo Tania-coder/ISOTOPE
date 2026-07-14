@@ -22,6 +22,7 @@ dev = ["pytest>=8", "ruff>=0.4"]
 pandas = ["pandas>=1.5"]
 polars = ["polars>=1.0"]
 spark = ["pyspark>=3.4"]
+sqlalchemy = ["sqlalchemy>=2.0"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
